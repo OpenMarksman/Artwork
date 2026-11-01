@@ -1,0 +1,41 @@
+/* OpenMarksman palette, version 1. Copy this file into a site and keep the version in its comment; do not load it from another origin.
+   Slate neutrals from the Mantine colour generator (seed #63687C), Mantine blue as the one accent (blue.8 light, blue.4 dark), amber only for safety.
+   Contrast on the page colour: ink 16:1, muted 6.8:1 light and 8.7:1 dark, accent 5.0:1 light and 7.6:1 dark, control-line 4:1 (WCAG 2.2: 4.5:1 text, 3:1 controls). */
+:root,
+[data-md-color-scheme="default"] {
+  --page: #ffffff;
+  --surface: #f6f8fc;
+  --surface-alt: #eef0f6;
+  --ink: #1d2130;
+  --muted: #555a6d;
+  --accent: #1971c2;
+  --accent-hover: #1864ab;
+  --accent-tint: #e7f5ff;
+  --on-accent: #ffffff;
+  --link: #1971c2;
+  --line: #dcdfe9;            /* separators only, never text or a control edge */
+  --control-line: #7b7f91;
+  --select: #fab005;          /* selection highlight in drawings: no wire colour shares it */
+  --warn-text: #7a4f00;
+  --warn-border: #e0b84a;
+  --warn-fill: #fff6db;
+}
+
+[data-md-color-scheme="slate"] {
+  --page: #10121b;
+  --surface: #161923;
+  --surface-alt: #1e212c;
+  --ink: #e9ebf1;
+  --muted: #acb0c0;
+  --accent: #4dabf7;
+  --accent-hover: #74c0fc;
+  --accent-tint: #172a40;
+  --on-accent: #10121b;
+  --link: #74c0fc;
+  --line: #2f323f;
+  --control-line: #6f7485;
+  --select: #fab005;
+  --warn-text: #f5c518;
+  --warn-border: #6b5a12;
+  --warn-fill: #1a1a12;
+}
