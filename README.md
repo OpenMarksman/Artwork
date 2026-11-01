@@ -25,3 +25,13 @@ Logos, wordmarks and colours of OpenMarksman and its projects, with the script t
 | warn | amber | amber | safety panels only |
 
 Neutrals: [Mantine colour generator, seed #63687C](https://mantine.dev/colors-generator/?color=63687C). Accent: Mantine's built-in `blue` (shade 8 light, shade 4 dark), the `primaryColor` of the Ballistics app. To change a colour, edit `colours/tokens.css`, raise its version, check every pair against the contrast ratios in its header, then update each site.
+
+## Docusaurus sites
+
+`docusaurus/brand.css` maps the palette to Docusaurus (Infima variables), Pagefind's search dialog and BuildGuide components. It holds colours only; each site keeps its own layout file. Copy it to `src/css/brand.css` and list it first:
+
+```ts
+customCss: ['./src/css/brand.css', './src/css/site.css']
+```
+
+In dark mode a BuildGuide board stays a light card with its true wire colours: BuildGuide's dark filter would show black wires light grey and red ones pink, and no colour gives a bright selection highlight through it. AutoLever (`site/`) is the reference site.
